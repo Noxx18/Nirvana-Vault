@@ -597,6 +597,35 @@ export default function App() {
 
                 </button>
 
+
+                <button
+                    type="button"
+                    className={
+                        seleccionActiva === 'integrantes'
+                        ? 'boton-seccion activo'
+                        : 'boton-seccion'
+
+                    }
+                    onClick={
+                        () =>
+                            setSeccionActiva('integrantes')
+
+                    }
+                >
+                    👥 Integrantes
+
+                </button>
+
+                {seccionActiva === 'integrantes' && (
+                    
+                    <section className="seccion-integrantes">
+
+                        <h2>👥 Integrantes de Nirvana</h2>
+
+                    </section>
+                    
+                )}
+
                 <button
                     type="button"
                     className={
