@@ -61,7 +61,17 @@ export default function App() {
     // Los botones cambian este estado con setSeccionActiva().
     // Más abajo un ternario mira este valor y decide qué renderizar.
 
-    const [seccionActiva, setSeccionActiva] = useState('inicio');
+    const [seccionActiva, setSeccionActiva] = useState(
+    () => {
+        const seccionGuardada = localStorage.getItem(
+            'nirvana_vault_seccion'
+        );
+
+        return seccionGuardada || 'inicio';
+    }
+);
+
+
 
 
     // Información de la enciclopedia.
@@ -597,6 +607,27 @@ export default function App() {
 
                 </button>
 
+
+                <button
+                    type="button"
+                    className={
+                        seccionActiva === 'integrantes'
+                        ? 'boton-seccion activo'
+                        : 'boton-seccion'
+
+                    }
+                    onClick={
+                        () =>
+                            setSeccionActiva('integrantes')
+
+                    }
+                >
+                    👥 Integrantes
+
+                </button>
+
+                
+
                 <button
                     type="button"
                     className={
@@ -648,6 +679,8 @@ export default function App() {
                     </p>
 
                 </div>
+
+                
 
 
 
@@ -716,6 +749,84 @@ export default function App() {
                             
                         </div>
 
+                        {seccionActiva === 'integrantes' && (
+                    
+                    <section className="seccion-integrantes">
+
+                        <div className="integrantes-presentacion">
+
+                            <h2>👥 Integrantes de Nirvana</h2>
+
+                            <p>
+                                Conoce a los integrantes que formaron la alineación más iconica de Nirvana.
+
+                            </p>
+
+
+
+                        </div>
+
+                        <div className="grupo-integrantes">
+
+                            <h3>Formación Icónica</h3>
+
+                            <div className="integrantes-grid">
+
+                                <article className="integrnate-card">
+
+                                    <h4>Kurt Cobain</h4>
+
+                                    <p>
+                                        Voz y Guitarrista
+
+                                    </p>
+
+                                    <span>
+                                        1987 - 1994
+
+                                    </span>
+
+                                </article>
+
+                                <article className="integrante-card">
+
+                                    <h4>Krist Novoselic</h4>
+
+                                    <p>
+                                        Bajista
+                                    </p>
+
+                                    <span>
+                                        1987 - 1994
+                                    </span>
+
+                                </article>
+
+
+                                <article className="integrante-card">
+
+                                    <h4>Dave Grohl</h4>
+
+                                    <p>
+                                        Baterista y Coreografo
+                                    </p>
+
+                                    <span>
+                                        1990 - 1994
+                                    </span>
+
+                                </article>
+
+                            </div>
+                            
+                        </div>
+
+                        
+
+                    </section>
+                    
+                )}
+
 
                         <div className='timeline-historia'>
 
@@ -726,15 +837,36 @@ export default function App() {
 
                                     <h3>Formación de Nirvana</h3>
 
-                                    <p>
-                                        Kurt Cobain y Krist Novoselic forman Nirvana en Aberdeen, Washington, junto al baterista Aaron Burckhard.
+                                            <p>
+                                                Kurt Cobain y Krist Novoselic forman la banda
+                                                en Aberdeen, Washington, junto al baterista
+                                                Aaron Burckhard.
+                                                </p>
 
-                                    </p>
+                                               <p>
+                                                    Cobain quería dedicarse a la música y había
+                                                    encontrado en el punk una forma de libertad
+                                                    y expresión. Después de conocer a Novoselic,
+                                                    ambos comenzaron a desarrollar el proyecto
+                                                    que terminaría convirtiéndose en Nirvana.
+                                                 </p>
 
-                                </div>
-                            </article>
+                                                   <p>
+                                                      Kurt buscaba un nombre que sonara bello y
+                                                       diferente de los nombres agresivos habituales
+                                                      del punk. El nombre "Nirvana" también estaba
+                                                        relacionado con la idea de liberarse del
+                                                     sufrimiento y del mundo exterior, algo que
+                                                      Cobain relacionaba con su propia visión del
+                                                      punk rock.
+                                                      </p>
 
-                                            <div className="timeline-historia">
+                                 </div>
+
+                                </article>
+
+                        
+                             <div className="timeline-historia">
 
                     
 
