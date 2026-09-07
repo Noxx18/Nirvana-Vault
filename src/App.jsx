@@ -977,8 +977,8 @@ export default function App() {
 
                                 <article className="integrante-card">
                                     <img
-                                        src={"kurtCobain"}
-                                        alt="Lider de la banda"
+                                        src={kurtCobain}
+                                        alt="Kurt Cobain"
                                         className="integrante-imagen"
                                         />
                                 
@@ -1028,6 +1028,12 @@ export default function App() {
 
                                 <article className="integrante-card">
 
+                                    <img
+                                        src={daveGrohl}
+                                         alt="Dave Grohl"
+                                         className="integrante-imagen"
+                                         />                                    
+
                                     <h4>Dave Grohl</h4>
 
                                     <p>
@@ -1059,6 +1065,12 @@ export default function App() {
 
                                 <article className="integrante-card">
 
+                                    <img
+                                        src={aaronBurckhard}
+                                         alt="Aaron Burckhard"
+                                         className="integrante-imagen"
+                                         />                                    
+
                                     <h4>Aaron Burckhard</h4>
 
                                     <p>
@@ -1081,6 +1093,13 @@ export default function App() {
 
                                     <h4>Dale Crover</h4>
 
+                                    <img
+                                        src={daleCrover}
+                                         alt="Dale Crover"
+                                         className="integrante-imagen"
+                                         />
+
+
                                     <p>
                                         Bateria
                                     </p>
@@ -1098,6 +1117,13 @@ export default function App() {
                                 </article>
 
                                 <article className="integrante-card">
+
+                                    <img
+                                        src={daveFoster}
+                                         alt="Dave Foster"
+                                         className="integrante-imagen"
+                                         />
+
 
                                     <h4>Dave Foster</h4>
 
@@ -1118,6 +1144,13 @@ export default function App() {
 
                                 <article className="integrante-card">
 
+                                    <img
+                                        src={chadChanning}
+                                         alt="Chad Channing"
+                                         className="integrante-imagen"
+                                         />
+
+
                                     <h4>Chad Channing</h4>
 
                                     <p>
@@ -1136,6 +1169,14 @@ export default function App() {
                                 </article>
 
                                 <article className="integrante-card">
+
+                                    <img
+                                        src={jasonEverman}
+                                         alt="Jason Everman"
+                                         className="integrante-imagen"
+                                         />
+
+
 
                                     <h4>Jason Everman</h4>
 
@@ -1156,6 +1197,13 @@ export default function App() {
                                 </article>
 
                                 <article className="integrante-card">
+
+                                    <img
+                                        src={danPeters}
+                                         alt="Dan Peters"
+                                         className="integrante-imagen"
+                                         />
+
 
                                     <h4>Dan Peters</h4>
 
