@@ -1207,3 +1207,30 @@ td select{
     }
 
 }
+
+.grupo-integrantes-extra {
+    margin-top: 30px;
+}
+
+.grupo-integrantes-extra h3 {
+    color: #f4d900;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.integrante-descripcion {
+    color: #aaa !important;
+    font-size: 14px !important;
+    line-height: 1.5;
+}
+
+.integrante-imagen {
+    width: 100X;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    display: block;
+    
+}

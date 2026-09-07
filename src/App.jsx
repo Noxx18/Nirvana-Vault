@@ -10,6 +10,19 @@ import liveAtReadingImg from './assets/Live_At_Reading-image.png';
 import unpluggedImg from './assets/MTV_Unplugged_In_New_York-image.png';
 import nevermindImg from './assets/Nevermind-image.png';
 
+import kurtCobain from './assets/Kurt-Cobain.png';
+import kristNovoselic from './assets/Krist-Novoselic.png';
+import daveGrohl from './assets/Dave-Grohl.png';
+
+import aaronBurckhard from './assets/Aaron.png';
+import daleCrover from './assets/Dale-crover.png';
+import daveFoster from './assets/Dave-Foster.png';
+import chadChanning from './assets/Chad-Channing.png';
+import jasonEverman from './assets/Jason-Everman.png';
+import danPeters from './assets/Dan-Peters.png';
+
+
+
 // export default = exporta App como componente principal.
 // function App = componente principal de la aplicación.
 export default function App() {
@@ -607,6 +620,27 @@ export default function App() {
 
                 </button>
 
+
+                <button
+                    type="button"
+                    className={
+                        seccionActiva === 'integrantes'
+                        ? 'boton-seccion activo'
+                        : 'boton-seccion'
+
+                    }
+                    onClick={
+                        () =>
+                            setSeccionActiva('integrantes')
+
+                    }
+                >
+                    👥 Integrantes
+
+                </button>
+
+                
+
                 <button
                     type="button"
                     className={
@@ -728,83 +762,7 @@ export default function App() {
                             
                         </div>
 
-                        {seccionActiva === 'integrantes' && (
-                    
-                    <section className="seccion-integrantes">
-
-                        <div className="integrantes-presentacion">
-
-                            <h2>👥 Integrantes de Nirvana</h2>
-
-                            <p>
-                                Conoce a los integrantes que formaron la alineación más iconica de Nirvana.
-
-                            </p>
-
-
-
-                        </div>
-
-                        <div className="grupo-integrantes">
-
-                            <h3>Formación Icónica</h3>
-
-                            <div className="integrantes-grid">
-
-                                <article className="integrnate-card">
-
-                                    <h4>Kurt Cobain</h4>
-
-                                    <p>
-                                        Voz y Guitarrista
-
-                                    </p>
-
-                                    <span>
-                                        1987 - 1994
-
-                                    </span>
-
-                                </article>
-
-                                <article className="integrante-card">
-
-                                    <h4>Krist Novoselic</h4>
-
-                                    <p>
-                                        Bajista
-                                    </p>
-
-                                    <span>
-                                        1987 - 1994
-                                    </span>
-
-                                </article>
-
-
-                                <article className="integrante-card">
-
-                                    <h4>Dave Grohl</h4>
-
-                                    <p>
-                                        Baterista y Coreografo
-                                    </p>
-
-                                    <span>
-                                        1990 - 1994
-                                    </span>
-
-                                </article>
-
-                            </div>
-                            
-                        </div>
-
-                        
-
-                    </section>
-                    
-                )}
+                       
 
 
                         <div className='timeline-historia'>
@@ -992,6 +950,241 @@ export default function App() {
                         </section>
                     
                 
+                )}
+
+                 {seccionActiva === 'integrantes' && (
+                    
+                    <section className="seccion-integrantes">
+
+                        <div className="integrantes-presentacion">
+
+                            <h2>👥 Integrantes de Nirvana</h2>
+
+                            <p>
+                                Conoce a los integrantes que formaron la alineación más iconica de Nirvana.
+
+                            </p>
+
+
+
+                        </div>
+
+                        <div className="grupo-integrantes">
+
+                            <h3>Formación Icónica</h3>
+
+                            <div className="integrantes-grid">
+
+                                <article className="integrante-card">
+                                    <img
+                                        src={"kurtCobain"}
+                                        alt="Lider de la banda"
+                                        className="integrante-imagen"
+                                        />
+                                
+                                    <h4>Kurt Cobain</h4>
+
+                                    <p>
+                                        Voz y Guitarra
+
+                                    </p>
+
+                                    <p className="integrante-description">
+                                        Vocalista, guitarrista y principal compositor de Nirvana.
+                                        Fue uno de los fundadores de la banda junto a Krist Novoselic.
+                                    </p>
+
+                                    <span>
+                                        1987 - 1994
+
+                                    </span>
+
+                                </article>
+
+                                <article className="integrante-card">
+
+                                    <img
+                                        src={kristNovoselic}
+                                         alt="Krist Novoselic"
+                                         className="integrante-imagen"
+                                         />
+
+                                    <h4>Krist Novoselic</h4>
+
+                                    <p>
+                                        Bajista
+                                    </p>
+
+                                    <p className="integrante-description">
+                                        Bajista y co-fundador de Nirvana. Formó parte de la banda desde sus comienzos hasta su final.
+                                    </p>
+
+                                    <span>
+                                        1987 - 1994
+                                    </span>
+
+                                </article>
+
+
+                                <article className="integrante-card">
+
+                                    <h4>Dave Grohl</h4>
+
+                                    <p>
+                                        Bateria y Coros
+                                    </p>
+
+                                    <p className="integrante-description">
+
+                                        Se incorporó como baterista en Nirvana en 1990 y participó en la etapa de mayor reconocimiento a nivel internacional de Nirvana.
+                                    </p>
+
+                                    <span>
+                                        1990 - 1994
+                                    </span>
+
+                                </article>
+
+                                
+
+                            </div>
+                            
+                        </div>
+
+                        <div className="grupo-integrantes-extra">
+
+                            <h3>Otros integrantes de Nirvana</h3>
+
+                            <div className="integrantes-grid">
+
+                                <article className="integrante-card">
+
+                                    <h4>Aaron Burckhard</h4>
+
+                                    <p>
+                                        Bateria
+                                    </p>
+
+                                    <p className="integrante-description">
+
+                                        Primer baterista de Nirvana durante sus comienzos.
+                                        Formó parte de la banda en su etapa inicial de 1987.
+                                    </p>
+
+                                    <span>
+                                        1987
+                                    </span>
+
+                                </article>
+
+                                <article className="integrante-card">
+
+                                    <h4>Dale Crover</h4>
+
+                                    <p>
+                                        Bateria
+                                    </p>
+
+                                    <p className="integrante-description">
+                                        Baterista de Melvins que colaboró con Nirvana en algunas de sus primeras grabaciones de Estudio.
+
+                                    </p>
+
+                                    <span>
+                                        1988
+                                    </span>
+
+
+                                </article>
+
+                                <article className="integrante-card">
+
+                                    <h4>Dave Foster</h4>
+
+                                    <p>
+                                        Bateria
+                                    </p>
+
+                                    <p className="integrante-description">
+                                        Ocupó brevemente el puesto de baterista durante los primeros años de la banda.
+                                    </p>
+
+                                    <span>
+                                        1988
+                                    </span>
+
+                                </article>
+
+
+                                <article className="integrante-card">
+
+                                    <h4>Chad Channing</h4>
+
+                                    <p>
+                                        Bateria
+                                    </p>
+
+                                    <p className="integrante-description">
+                                        Baterista de Nirvana durante la etapa de Bleach. Album publicado el 1989. Participó en gran parte de la grabación del album.
+                                    </p>
+
+                                    <span>
+                                        1988 - 1990
+                                    </span>
+
+
+                                </article>
+
+                                <article className="integrante-card">
+
+                                    <h4>Jason Everman</h4>
+
+                                    <p>
+                                        Guitarra
+                                    </p>
+
+                                    <p className="integrante-description">
+                                        Se incorporó como segundo guitarrista y acompañó a Nirvana durante parte de la gira de Bleach.
+
+                                    </p>
+
+                                    <span>
+                                        1989
+                                    </span>
+
+
+                                </article>
+
+                                <article className="integrante-card">
+
+                                    <h4>Dan Peters</h4>
+
+                                    <p>
+                                        Bateria
+                                    </p>
+
+                                    <p className="integrante-description">
+                                        Tocó brevemente con Nirvana en 1990, durante el periodo anterior a la llegada de Dave Grohl.
+
+                                    </p>
+
+                                    <span>
+                                        1990
+                                    </span>
+
+
+                                </article>
+
+
+                            </div>
+
+
+                        </div>
+
+                        
+
+                    </section>
+                    
                 )}
 
 
