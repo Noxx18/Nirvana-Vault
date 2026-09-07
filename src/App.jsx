@@ -329,7 +329,7 @@ export default function App() {
 
         if (!/^\d{4}$/.test(nuevoAnio)) {
 
-            aler(
+            alert(
                 'El Año debe tener exactamente 4 digitos.'
             );
 
@@ -469,7 +469,7 @@ export default function App() {
 
         }
 
-        
+
         // map() recorre el array y devuelve uno nuevo.
         const cancionesActualizadas = canciones.map(
             (cancion) => {
