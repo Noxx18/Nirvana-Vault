@@ -327,6 +327,27 @@ export default function App() {
 
         }
 
+        if (!/^\d{4}$/.test(nuevoAnio)) {
+
+            aler(
+                'El Año debe tener exactamente 4 digitos.'
+            );
+
+            return;
+        }
+
+        const anioNumero = Number(nuevoAnio);
+
+        if (anioNumero < 1987 || anioNumero > 1994) {
+
+            alert(
+                'El año debe estar entre 1987 y 1994.'
+
+            );
+
+            return;
+        }
+
 
         const nuevaCancion = {
 
@@ -421,6 +442,34 @@ export default function App() {
         }
 
 
+        
+
+        if (!/^\d{4}$/.test(anioEdicion)) {
+
+            alert(
+                'El año debe tener exactamente 4 digitos.'
+            );
+            return;
+
+        }
+
+        const anioEdicionNumero = Number(anioEdicion);
+
+        if (
+            anioEdicionNumero < 1987 ||
+            anioEdicionNumero > 1994
+
+        ) {
+            alert(
+                'El año debe estar entre 1987 y 1994.'
+
+            );
+
+            return;
+
+        }
+
+        
         // map() recorre el array y devuelve uno nuevo.
         const cancionesActualizadas = canciones.map(
             (cancion) => {
@@ -1371,11 +1420,20 @@ export default function App() {
 
                                 <input
                                     type="text"
+                                    inputMode="numeric"
+                                    maxLength="4"
                                     placeholder="Año"
                                     value={nuevoAnio}
                                     onChange={
-                                        (evento) =>
-                                            setNuevoAnio(evento.target.value)
+                                        (evento) => {
+
+                                            const valor = evento.target.value;
+
+                                            if (/^\d*$/.test(valor)) {
+                                                setNuevoAnio(valor);
+
+                                            }
+                                        }
                                     }
                                 />
 
@@ -1955,6 +2013,36 @@ export default function App() {
         }}
     >
         Inicio
+    </button>
+
+    <button
+        type="button"
+        onClick={() => {
+            setSeccionActiva('historia')
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+
+            });
+        }}
+    >
+        Historia
+    </button>
+
+    <button
+        type="button"
+        onClick={() => {
+            setSeccionActiva('integrantes')
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+
+            });
+
+        }}
+
+    >
+        Integrantes
     </button>
 
     <button

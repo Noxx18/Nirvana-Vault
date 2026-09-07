@@ -699,6 +699,8 @@ td select{
     }
 
 }
+
+
 /* Footer */
 
 .footer-nirvana{
@@ -742,7 +744,14 @@ td select{
 }
 
 
-.footer-enlaces a{
+.footer-enlaces buttton {
+
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    
     color:#d8d8d8;
     text-decoration:none;
 
@@ -752,7 +761,7 @@ td select{
 }
 
 
-.footer-enlaces a:hover{
+.footer-enlaces button:hover{
     color:#f4d900;
     transform:translateY(-2px);
 }
