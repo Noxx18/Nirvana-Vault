@@ -607,27 +607,6 @@ export default function App() {
 
                 </button>
 
-
-                <button
-                    type="button"
-                    className={
-                        seccionActiva === 'integrantes'
-                        ? 'boton-seccion activo'
-                        : 'boton-seccion'
-
-                    }
-                    onClick={
-                        () =>
-                            setSeccionActiva('integrantes')
-
-                    }
-                >
-                    👥 Integrantes
-
-                </button>
-
-                
-
                 <button
                     type="button"
                     className={
