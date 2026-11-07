@@ -1243,3 +1243,128 @@ td select{
     display: block;
     
 }
+
+/* pagina individual de los albumes */
+
+.detalle-album {
+    margin-top: 30px;
+    padding: 25px;
+
+}
+
+.cabecera-detalle-album {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-top: 25px;
+
+}
+
+.cabecera-detalle-album img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+
+.cabecera-detalle-album p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+
+}
+
+@media (max-width: 768px) {
+
+    .cabecera-detalle-album {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .detalle-album {
+        padding: 15px;
+    }
+
+}
+/* Tracklist de los albumes. */
+
+.tracklist-album {
+    margin-top: 45px;
+
+}
+
+.tracklist-album h3 {
+    color: #f4d900;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+
+}
+
+.tracklist-cancion {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 16px 20px;
+    margin-bottom: 10px;
+    background: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    transition: 0.2s;
+
+}
+
+.tracklist-cancion:hover{
+    background: #252525;
+    border-color: #f2d900;
+
+}
+
+.tracklist-cancion span{
+    color: #f4d900;
+    font-weight: bold;
+    min-width: 25px;
+
+}
+
+.tracklist-cancion p {
+    margin: 0;
+    color: #ffffff;
+
+}
+
+/* Contenedor de cada canción. */
+
+.tracklist-cancion-contenedor {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Botón desplegable */
+
+.tracklist-cancion-contenedor .tracklist-cancion {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 0;
+    font: inherit;
+    cursor: pointer;
+}
+
+.flecha-cancion {
+    margin-left: auto;
+}
+
+/* Información Desplegada. */
+
+.informacion-cancion h4 {
+    color: #f4d900;
+    margin-bottom: 12px;
+
+}
+
+.informacion-cancion p {
+    color: #cccccc;
+    line-height: 1.6;
+}

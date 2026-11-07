@@ -68,6 +68,8 @@ export default function App() {
 
     const [estadoEdicion, setEstadoEdicion] = useState('');
 
+    const [albumSeleccionado, setAlbumSeleccionado] = useState(null);
+
 
     // Sección que se está mostrando.
     // MACHETE: ¿Cómo cambio/renderizo CRUD y Enciclopedia?
@@ -90,6 +92,95 @@ export default function App() {
     // Información de la enciclopedia.
     // Array de objetos: cada objeto guarda los datos de un álbum.
     // MACHETE: después uso map() para renderizar una card por álbum.
+    
+
+    const [cancionSeleccionada, setCancionSeleccionada] = useState();
+
+    const cancionesNevermind = [
+    //Lista de canciones del album Nevermind (1991)
+
+    {
+        id: 1,
+        titulo: 'Smells Like Teen Spirit'
+
+    },
+
+    {
+
+        id: 2,
+        titulo: 'In Bloom'
+
+    },
+
+    {
+
+        id: 3,
+        titulo: 'Come As You Are'
+
+    },
+    {
+
+        id: 4,
+        titulo: 'Breed'
+
+    },
+
+    {
+
+        id: 5,
+        titulo: 'Lithium'
+
+    },
+
+    {
+    id: 6,
+    titulo: 'Polly'
+
+    },
+
+    {
+
+        id: 7,
+        titulo: 'Territorial Pissing'
+
+    },
+
+    {
+
+        id: 8,
+        titulo: 'Drain You'
+
+    },
+
+    {
+
+        id: 9,
+        titulo: 'Lounge Act'
+
+    },
+
+    {
+        id: 10,
+        titulo: 'Stay Away'
+
+    },
+
+    {
+        id: 11,
+        titulo: 'On A Plain'
+
+    },
+
+    {
+
+        id: 12,
+        titulo: 'Something In The Way'
+
+    }
+
+
+    ];
+
 
     const albumesInformacion = [
 
@@ -1911,6 +2002,7 @@ export default function App() {
                         {/* MACHETE: ¿Cómo rendericé la enciclopedia?
                             map() recorre albumesInformacion y crea una card por objeto.
                             album.nombre, album.anio, etc. leen sus propiedades. */}
+                            {albumSeleccionado === null ? (
 
                         <div className="lista-albumes">
 
@@ -1920,6 +2012,15 @@ export default function App() {
                                     <article
                                         className="card-album"
                                         key={album.id}
+                                        onClick={() => {
+
+                                            if (album.id === 2) {
+
+                                                setAlbumSeleccionado(album);
+
+                                                
+                                            }
+                                        }}
                                     >
 
                                         {/* Portada del álbum. */}
@@ -1987,6 +2088,124 @@ export default function App() {
                             )}
 
                         </div>
+
+                    ) : (
+
+                        <section className="detalle-album">
+
+                            <button
+                                type="button"
+                                onClick={() => {
+
+                                    setAlbumSeleccionado(null);
+
+                                }}
+                            >
+                                ← Volver a la enciclopedia
+                            </button>
+
+                            <div className="cabecera-detalle-album">
+
+                                <img
+                                    src={albumSeleccionado.imagen}
+                                    alt={`Portada de ${albumSeleccionado.nombre}`}
+                                />
+
+                                <div>
+
+                                    <h2>
+                                        {albumSeleccionado.nombre}
+                                    </h2>
+
+                                    <p>
+                                        {albumSeleccionado.anio}
+                                    </p>
+
+                                    <p>
+                                        {albumSeleccionado.tipo}
+                                    </p>
+
+                                    <p>
+                                        {albumSeleccionado.descripcion}
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div className="tracklist-album">
+                                {/* Lista de canciones del album Nevermind. */}
+
+                                <h3>
+                                    🎵 Lista de canciones
+                                </h3>
+
+                                {cancionesNevermind.map(
+                                    (cancion) => (
+
+                                        <div
+                                            className="tracklist-cancion-contenedor"
+                                            key={cancion.id}
+
+                                        >
+
+                                            <button
+                                                type="button"
+                                                className="tracklist-cancion"
+                                                aria-expanded={cancionSeleccionada === cancion.id}
+                                                onClick={() => {
+
+                                                    setCancionSeleccionada(
+                                                        cancionSeleccionada === cancion.id
+                                                        ? null
+                                                        : cancion.id
+
+                                                    );
+
+                                                }}
+
+                                        
+                                            >
+
+                                                <span>
+                                                    {String(cancion.id).padStart(2, '0')}
+                                                </span>
+
+                                                <p>
+                                                    {cancion.titulo}
+                                                </p>
+                                                
+                                                <span className="flecha-cancion">
+                                                    {cancionSeleccionada === cancion.id ? '▲' : '▼'}
+                                                </span>
+
+                                        </button>
+
+                                        {cancionSeleccionada === cancion.id && (
+
+                                            <div className="informacion-cancion">
+
+                                                <h4>
+                                                    {cancion.titulo}
+                                                </h4>
+
+                                                <p>
+                                                    Proximamente: descripción, contexto e interpretacion de la canción.
+                                                </p>
+
+                                            </div>
+
+                                        )}
+                                    
+                                </div>
+                                    
+                                    )
+                                )}
+                            </div>
+
+                        </section>
+
+                    )}
 
                     </section>
 
