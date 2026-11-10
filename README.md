@@ -51,7 +51,3 @@ Entre las funciones planeadas se encuentra una vista individual para cada álbum
 ## 👤 Desarrollador
 
 Desarrollado por **Noxx_Dev**.
-
-## 📚 Proyecto educativo
-
-Este sitio fue creado con fines educativos y no está afiliado oficialmente con Nirvana ni con sus representantes.

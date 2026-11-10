@@ -101,80 +101,186 @@ export default function App() {
 
     {
         id: 1,
-        titulo: 'Smells Like Teen Spirit'
+        titulo: 'Smells Like Teen Spirit',
 
+        descripcion: 'Canción de apertura de Nevermind (1991), reconocida por su riff de guitarra, sus cambios de intensidad y su energia caracteristica del grunge.',
+        contexto: 'La cancion fue grabada en 1991 con el productor Butch Vig. Su titulo surgió cuando Kathleen Hanna escribió una frase en la pared de Kurt Cobain. Kurt pensó que hacia referencia a la rebeldia juvenil, pero en realidad era una broma relacionada con u ndesodorante llamado "Teen Spirit".',
+        significado: 'La canción suele interpretarse como una expresion de frustración, inconformismo y apatia juvenil. Kurt Cobain habló de sus temas revolucionarios y de la necesidad de despertar a una generación que consideraba demasiado apatica. Sin embargo, su letra admite distintas interpretaciones.',
+
+        spotify: 'https://open.spotify.com/intl-es/track/4CeeEOM32jQcH3eN9Q2dGj?si=15804d0b198f481f',
+       
+        youtube: 'https://www.youtube.com/watch?v=hTWKbfoikeg'
     },
 
     {
 
         id: 2,
-        titulo: 'In Bloom'
+        titulo: 'In Bloom',
+
+        descripcion: 'Segunda canción de Nevermind (1991). Se caracteriza por sus guitarras distorsionadas, sus cambios entre estrofas más tranquilas y estribillos intensos, y las armonias vocales de Kurt Cobain y Dave Grohl.',
+        contexto: 'In Bloom fue compuesta antes del lanzamiento de Nevermind. Nirvana grabó una primera version con Chad Channing en la bateria durante 1990, y posteriormente la volvió a grabar con Dave Grohl para el album de 1991. En 1992 se publicó un videoclip dirigido por Kevin Kerslake, que parodia las presentaciones musicales de la televisión de los años sesenta.',
+        significado: 'La canción suele interpretarse como una critica a quienes disfrutan de la musica de una banda sin comprender sus mensajes. Su letra presenta la contradiccion de alguien que canta las canciones y disfruta de ellas, pero no entiende realmente lo que significan.',
+        
+        spotify: 'https://open.spotify.com/track/3sKLf8SmgbyIikCTBZty9F',
+       
+        youtube: 'https://www.youtube.com/watch?v=PbgKEjNBHqM'
 
     },
 
     {
 
         id: 3,
-        titulo: 'Come As You Are'
+        titulo: 'Come As You Are',
+        
+        descripcion: 'La tercera canción de Nevermind (1991). Se caracteriza por su riff de guitarra con efecto chorus, su ritmo pausado y su atmosfera melancolica. Es una de las canciones más reconocidas de Nirvana.',
+        contexto: 'Fue grabada durante las sesiones de Nevermind en 1991, con Butch Vig como productor. Se publicó como sensicllo en 1992 y contó con un videoclip dirigido por Kevin Kerslake. Su sonido más accesible contribuyó a ampliar la popularidad de Nirvana despues del éxito de Smells Like Teen Spirit.',
+        significado: 'La canción presenta mensajes contradictorios relacionados con la identidad, la confianza y la aceptación. Puede interpretarse como una invitación a mostrarse como uno es, aunque sus frases ambiguas tambien sugieren dudas y contradicciones en las relaciones humanas. Kurt Cobain describió la canción como una composicion sobre las personas y las contradicciones de sus comportamientos.',
+
+        spotify: 'https://open.spotify.com/track/2RsAajgo0g7bMCHxwH3Sk0',
+       
+        youtube: 'https://www.youtube.com/watch?v=vabnZ9-ex7o'
 
     },
     {
 
         id: 4,
-        titulo: 'Breed'
+        titulo: 'Breed',
+
+        descripcion: 'Cuarta canción de Nevermind (1991). Se caracteriza por su ritmo acelerado, su bajo distorsionado y sus guitarras agresivas. Es una de las canciones del album que conserva una influencia más marcada del punk rock.',
+        contexto: 'Breed existia antes de la grabación de Nevermind y originalmente se conocia como Imodium. Nirvana ya la interpretaba en directo durante 1989 y 1990. Posteriormente fue grabada con Dave Grohl en la bateria durante las sesiones de Nevermind, producidas por Butch Vig en 1991.',
+        significado: 'La canción suele interpretarse como una critica a las expectativas tradicionales sobre las relaciones, el matrimonio y la formación de una familia. Su letra utiliza frases repetitivas y un tono desafiante para cuestionar la presión social de seguir un estilo de vida convencional.',
+
+        spotify: 'https://open.spotify.com/track/3DvloR0yV79WpcefeqtWH7',
+       
+        youtube: 'https://www.youtube.com/watch?v=J6EDW5WFb2M'
 
     },
 
     {
 
         id: 5,
-        titulo: 'Lithium'
+        titulo: 'Lithium',
+
+        descripcion: 'Quinta canción de Nevermind (1991). Se caracteriza por sus cambios entre estrofas tranquilas y estribillos intensos, combinando guitarras limpias con distorsión. La interpretacion vocal de Kurt Cobain pasa de un tono contenido a momentos muchos más enérgicos.',
+        contexto: 'Lithium fue compuesta por Kurt Cobain antes de las sesiones definitivas de Nevermind. Nirvana grabó una versión temprana durante las sesiones con Butch Vig en 1990 y posteriormente la volvió a grabar para el álbum de 1991, con Dave Grohl en la bateria. Fue publicada como sencillo en 1992.',
+        significado: 'La canción presenta a un personaje que atraviesa dificultades emocionales y encuentra consuelo en la religión. Kurt Cobain explicó que imaginaba a una persona que, después de perder a alguien importante, recurría a la fe para evitar caer en la desesperación. El titulo también puede asociarle con el litio, utilizado como medicamento estabilizador del estado de ánimo, aunque la historia de la canción se centra principalmente en la busqueda de estabilidad emocional.',
+
+        spotify: 'https://open.spotify.com/intl-es/track/2YodwKJnbPyNKe8XXSE9V7',
+        
+        youtube: 'https://www.youtube.com/watch?v=pkcJEvMcnEg'
 
     },
 
     {
     id: 6,
-    titulo: 'Polly'
+    titulo: 'Polly',
+
+    descripcion: 'Sexta canción de Nevermind (1991). Se caracteriza por su instrumentación acústica, su ritmo lento y su átmosfera inquietante. A diferencia de las canciones más intensas del álbum, Polly utiliza un sonido sencillo y contenido para abordar una historia pertubadora.',
+    contexto: 'Kurt Cobain escribió Polly inspirado en un caso real ocurrido en 1987, cuando una adolescente fue secuestrada y agredida por un hombre en el estado de Washington, Estados Unidos. La víctima consiguió escapar. Cobain decidió abordar la historia desde la perspectiva del agresor, utilizando la canción para retratar una situacion de violencia y abuso. La composicion existia antes de Nevermind y fue incluida en el album de 1991.',
+    significado: 'Polly aborda la violencia, el abuso de poder y la deshumanizacion de una víctima. Su letra adopta la perspectiva del agresor, pero esto no significa que la canción justifique sus acciones. Por el contrario, esa elección narrativa permite mostrar de manera inquietante su cureldad y falta de empatía. La canción suele interpretarse como una denuncia de la violencia sexual y del sufrimiento que provoca.',
+
+    spotify: 'https://open.spotify.com/track/3kzC0NDNlnP9qvRr9dGZhF',
+    
+    youtube: 'https://www.youtube.com/watch?v=DrlaVYKWeLU'
 
     },
 
     {
 
         id: 7,
-        titulo: 'Territorial Pissing'
+        titulo: 'Territorial Pissings',
+
+        descripcion: 'Séptima canción del album (1991). Se caracteriza por su ritmo acelerado, sus guitarras fuertemente distorsionadas y la interpretación vocal agresiva de Kurt Cobain. Su sonido refleja la influencia del pink rock en Nirvana y contrasta con las composiciones melódicas del álbum.',
+        contexto: 'Territorial Pissings fue grabada durante las sesiones de Nevermind en 1991, bajo la producción de Butch Vig. La canción comienza con Krist Novoselic cantnado brevemente una parte de Get Together, una canción popularizada por The Youngbloods en los años sesenta. Después de esa introducción, Nirvana pasa abruptamente a una interpretación rápida y caótica.',
+        significado: 'La canción suele interpretarse como una critica a los comportamientos territoriales, la agresividad y las actitudes machistas. Su letra también contiene referencias a la necesidad de cmabiar las ideas tradicionales sobre las relaciones entre hombres y mujeres. El tono irónico y desafiante refleja el rechazo de Kurt Cobain hacia determinadas normas sociales y formas de ejercer el poder.',
+
+        spotify: 'https://open.spotify.com/track/3B4gVz0iyhwRboVbnqEzLk',
+        youtube: 'https://www.youtube.com/watch?v=9yNPgx0swCM'
 
     },
 
     {
 
         id: 8,
-        titulo: 'Drain You'
+        titulo: 'Drain You',
+
+        descripcion: 'Octava canción del álbum (1991). Se caracteriza por sus guitarras distorsionadas, sus melodias vocales y sus cambios de intensidad. Una de sus partes más distintivas es la sección instrumental intermedia, que incorpora sonidos experimentales antes de regresar al riff principal.',
+        contexto: 'Drain You fue compuesta por Kurt Cobain y grabada durante las sesiones de Nevermind en 1991, con Butch Vig como productor. Durante la grabación se utilizaron distintos efectos sonoros para construir su sección instrumental. Aunque no fue uno de los principales sencillos del álbum, se conritió en una canción habitual de los conciertos de Nirvana. Cobain llegó a mencionarla entre sus composiciones favoritas.',
+        significado: 'La canción suele interpretarse como una reprentación de una relación intensa y absorbente, en la que dos personas desarrollan una dependencia emocional. Su letra utiliza imagenes corporales y metaforas inquietantes para expresar sentimientos de apego, vulnerabilidad y posesión. Tambien puede entenderse como una exploración de cómo una relacion puede consumir emocionalmente a quienes participan en ella.',
+
+        spotify: 'https://open.spotify.com/intl-es/track/2styfa36pNOMd0MTP76Q0Z',
+        youtube: 'https://www.youtube.com/watch?v=AJUpHxlJUNQ'
 
     },
 
     {
 
         id: 9,
-        titulo: 'Lounge Act'
+        titulo: 'Lounge Act',
+
+        descripcion: 'Novena canción del álbum (1991). Se caracteriza por su reconocible linea de bajo, sus guitarras distorsionadas y una interpretación vocal que aumenta progresivamente de intensidad. Combina elementos del rock alternativo y el punk con una estructura melódica.',
+        contexto: 'Lounge Act fue grabada durante las sesiones de Nevermind en 1991, bajo la producción de Butch Vig. Su introducción de bajo, interpretada por Krist Novoselic, es uno de los elementos más distintivos de la composición. La canción también ha sido relacionada con experiencias sentimentales de Kurt Cobain anteriores al éxito comercial de Nirvana.',
+        significado: 'La canción suele interpretarse como una reflexión sobre los celos, la inseguridad y los conflictos dentor de una relación sentimental. Su letra expresa sentimientos contradictorios entre el deseo de mantener una relación y la necesidad de independencia. También puede entenderse como una representación de las dificultades para confiar en otra persona y superar experiencias del pasado.',
+
+        spotify: 'https://open.spotify.com/track/7glld4kxYHp61zIPtSVHNk',
+        youtube: 'https://www.youtube.com/watch?v=dZqpol8Yrq8'
 
     },
 
     {
         id: 10,
-        titulo: 'Stay Away'
+        titulo: 'Stay Away',
+
+        descripcion: 'Decima canción del álbum (1991). Se caracteriza por sus guitarras distorsionadas, su bateria enérgica y la interpretación vocal agresiva de Kurt Cobain. Su ritmo acelerado y su actitud desafiante reflejan la influencia del punk rock en el sonido de Nirvana.',
+        contexto: 'Stay Away fue desarrollada originalmente bajo el titulo "Pay to Play", con el que Nirvana llegó a grabar una versión en 1990. Ese titulo hacia referencia a la práctica de exigir dinero a las bandas para permitirles actuar en determinados conciertos. La canción fue posteriormente reelaborada y grabada para Nevermind en 1991, con Dave Grohl en la bateria y Butch Vig como productor.',
+        significado: 'La canción suele interpretarse como una expresión de rechazo hacia las presiones sociales, el conformismo y las expectativas impuestas por otras personas. Su letra transmite una actitud de rebeldia y distanciamiento frente a comportamientos considerados falsos o superficiales. El titulo original "Pay to Play", tambien permite relacionar sus origenes con una critica a determinadas practicas de la industria musical.',
+
+        spotify: 'https://open.spotify.com/track/5p62DtOWxZB9yCtrQ4cwSo',
+        
+        youtube: 'https://www.youtube.com/watch?v=vnHm-u4IYuo'
 
     },
 
     {
         id: 11,
-        titulo: 'On A Plain'
+        titulo: 'On A Plain',
+
+        descripcion: 'Undécima canción del álbum (1991). Se caracteriza por sus guitarras distorsionadas, su ritmo constante y sus armonías vocales. Combina una melodía accesible con la energía característica de Nirvana, mientras la interpretación de Kurt Cobain alterna entre momentos tranquilos y otros más intensos.',
+        contexto: 'On a Plain fue grabada durante las sesiones de Nevermind en 1991, con Butch Vig como productor. Dave Grohl participó en las armonías vocales, aportando una de las características más reconocibles de la canción. Kurt Cobain trabajó en parte de su letra durante el proceso de grabación del álbum, utilizando frases personales, imágenes ambiguas y referencias a sus propias experiencias.',
+        significado: 'La canción suele interpretarse como una reflexión sobre la identidad, la autoestima y las contradicciones personales. Su letra combina expresiones de confianza con sentimientos de inseguridad y confusión. También presenta un tono irónico y autorreferencial, ya que Cobain parece cuestionar su propia capacidad para expresar lo que siente y encontrar un significado claro en sus palabras.',
+
+        spotify: 'https://open.spotify.com/intl-es/track/7ACz2RanNIfGzr4J3VDDbI',
+        
+        youtube: 'https://www.youtube.com/watch?v=c023U4oQGr4'
 
     },
 
     {
 
         id: 12,
-        titulo: 'Something In The Way'
+        titulo: 'Something In The Way',
+
+        descripcion: 'Duodécima canción del álbum (1991). Se caracteriza por su ritmo lento, su guitarra acústica y la interpretación vocal suave de Kurt Cobain. La incorporación de un violanchelo refuerza su átmosfera melancólica, convirtiendola en una de las composiciones más intimas y sombrias del álbum.',
+        contexto: 'Something in the Way fue grabada durante las sesiones de Nevermind en 1991, con Butch Vig como productor. Cobain interpretó la canción de manera muy tranquila, utilizando una guitarra acústica y una voz casi susurrada. Posteriormente se incorporó un violonchelo interpretado por Kirk Canning. La canción está relacionada con recuerdos de la juventud de Cobain y con una historia sobre vivir debajo de un puente en Aberdeen, Washington, aunque los detalles de ese relato han sido cuestionados y no deben considerarse completamente autobiográficos.',
+        significado: 'La canción suele interpretarse como una representación del aislamiento, la soledad y las dificultades para encontrar un lugar en el mundo. Su atmósfera transmite sentimientos de abandono, resignación y desconexión emocional. Aunque contiene elementos relacionados con las experiencias personales de Kurt Cobain, también utiliza imágenes simbólicas que permiten distintas interpretaciones.',
+
+        spotify: 'https://open.spotify.com/intl-pt/track/1nFtiJxYdhtFfFtfXBv06s',
+        
+        youtube: 'https://www.youtube.com/watch?v=4VxdufqB9zg'
+    },
+
+    {
+
+        id: 13,
+        titulo: 'Endless, Nameless',
+
+        descripcion: 'Pista oculta del album. Se caracteriza por sus guitarras extremadamente distorsionadas, sus cambios bruscos de intensidad y uan interpretación vocal caótica de Kurt Cobain. Su estructura experimental constrasta con las composiciones más melódicas del álbum.',
+        contexto: '"Endless, Nameless" surgió durante las sesiones de grabación de Nevermind en 1991, después de que Kurt Cobain se frustrara mientras intentaba grabar Lithium. La banda comenzó una improvisación ruidosa que terminó convirtiéndose en esta composición. Fue incluida como pista oculta en determinadas ediciones del álbum, después de un largo período de silencio al finalizar "Something in the Way".',
+        significado: 'La canción suele interpretarse como una expresión de frustración, rabia y liberación emocional. Su estructura improvisada, sus gritos y sus sonidos distorsionados transmiten una sensación de descontrol. A diferencia de otras composiciones de Nirvana, no presenta una narrativa claramente definida, por lo que su significado está especialmente abierto a interpretaciones.',
+
+        spotify: 'https://open.spotify.com/intl-es/track/5KV9bNW1Ta4Z4PdHgu84TA?si=e73010f0d9eb46a3',
+        
+        youtube: 'https://youtu.be/uj1PagCfejs?si=SC_GoLnsA5ZHhVkB'
 
     }
 
@@ -2189,9 +2295,100 @@ export default function App() {
                                                     {cancion.titulo}
                                                 </h4>
 
-                                                <p>
-                                                    Proximamente: descripción, contexto e interpretacion de la canción.
-                                                </p>
+                                                {cancion.descripcion && (
+
+                                                    <div>
+
+                                                        <h5>
+                                                            Descripcion
+                                                        </h5>
+
+                                                        <p>
+                                                            {cancion.descripcion}
+                                                        </p>
+
+                                                    </div>
+
+                                                )}
+
+                                                {cancion.contexto && (
+
+                                                    <div>
+
+                                                        <h5>
+                                                            Contexto
+                                                        </h5>
+
+                                                        <p>
+                                                            {cancion.contexto}
+                                                        </p>
+
+
+                                                    </div>
+
+                                                )}
+
+                                                {cancion.significado && (
+
+                                                    <div>
+
+                                                        <h5>
+                                                            Significado e Interpretacion
+                                                        </h5>
+
+                                                        <p>
+                                                            {cancion.significado}
+                                                        </p>
+
+                                                    </div>
+
+                                                )}
+
+
+                                                {cancion.enlace && (
+
+                                                    <div>
+
+                                                        <h5>
+                                                            Enlaces de las canciones
+                                                        </h5>
+                                                    </div>
+                                                )}
+
+                                                {!cancion.descripcion && !cancion.contexto && !cancion.significado && (
+
+                                                    <p>
+                                                        Proximamente: informacion de esta cancion.
+                                                    </p>
+
+                                                )}
+                                                {(cancion.spotify?.trim() || cancion.youtube?.trim()) && (
+                                                    <div className="enlaces-cancion">
+                                                        {cancion.spotify?.trim() && (
+                                                            <a
+                                                                className="enlace-plataforma"
+                                                                href={cancion.spotify}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                                aria-label={`Escuchar ${cancion.titulo} en Spotify`}
+                                                            >
+                                                                Spotify
+                                                            </a>
+                                                        )}
+
+                                                        {cancion.youtube?.trim() && (
+                                                            <a
+                                                                className="enlace-plataforma"
+                                                                href={cancion.youtube}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                                aria-label={`Ver ${cancion.titulo} en YouTube`}
+                                                            >
+                                                                YouTube
+                                                            </a>
+                                                        )}
+                                                    </div>
+                                                )}
 
                                             </div>
 
@@ -2294,7 +2491,7 @@ export default function App() {
     </div>
 
     <div className="footer-inferior">
-        <p>© 2026 Nirvana Vault — Proyecto educativo.</p>
+        <p>© 2026 Nirvana Vault</p>
         <p>Desarrollado por Noxx</p>
     </div>
 </footer>

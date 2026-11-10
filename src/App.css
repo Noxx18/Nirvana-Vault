@@ -1368,3 +1368,53 @@ td select{
     color: #cccccc;
     line-height: 1.6;
 }
+
+.informacion-cancion h5 {
+    color: #f4d900;
+    font-size: 15px;
+    margin: 10px 0 8px;
+}
+
+.informacion-cancion p {
+    margin-bottom: 12px;
+}
+
+/* Enlaces de las canciones. */
+
+.enlaces-cancion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+
+}
+
+.enlace-plataforma {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    background: #1c1c1c;
+    border: 1px solid #444444;
+    border-radius: 8px;
+    color: #f4d900;
+    font-size: 14px;
+    font-weight: 600px;
+    text-decoration: none;
+    transition: 0,2s ease;
+
+}
+
+.enlace-plataforma:hover {
+    background: #f4d900;
+    border-color: #f4d900;
+    color: #111111;
+    transform: translateY(-2px);
+
+}
+
+.enlace-plataforma:focus-visible {
+    outline: 2px solid #f4d900;
+    outline-offset: 3px;
+}
