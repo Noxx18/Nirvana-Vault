@@ -13,7 +13,7 @@ https://nirvana-vault.vercel.app/
 - 🏠 Página de inicio.
 - 📖 Historia de Nirvana.
 - 👥 Información sobre los integrantes de la banda.
-- 🎵 CRUD de canciones.
+- 🎵 CRUD de canciones favoritas que tengas de la banda.
 - 🔎 Buscador de canciones.
 - 💾 Almacenamiento de canciones mediante LocalStorage.
 - ✏️ Registro, edición y eliminación de canciones.
