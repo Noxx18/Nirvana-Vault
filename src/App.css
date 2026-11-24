@@ -1418,3 +1418,27 @@ td select{
     outline: 2px solid #f4d900;
     outline-offset: 3px;
 }
+
+.boton-volver-enciclopedia {
+    background: #1c1c1c;
+    color: #f4d900;
+    border: 1px solid #444444;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 24px;
+    transition: 0.2s ease;
+}
+
+.boton-volver-enciclopedia:hover {
+    background: #f4d900;
+    color: #111111;
+    border-color: #f4d900;
+}
+
+.boton-volver-enciclopedia:focus-visible {
+    outline: 2px solid #f4d900;
+    outline-offset: 3px;
+}
